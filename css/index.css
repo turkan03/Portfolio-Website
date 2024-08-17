@@ -1,0 +1,14 @@
+/* Main styles */
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  font-family: "Anek Devanagari", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #312828;
+  opacity: 0.8;
+}
