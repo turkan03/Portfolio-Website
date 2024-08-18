@@ -104,7 +104,34 @@ footer span {
 
 /* For javascript */
 .hire_container {
-  display: none;
+  /* display: none; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+}
+
+.hire_container a {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.hire_container a:hover,
+.hire_container a:active {
+  color: #c75b7a;
+}
+
+.contact_links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.hire_container p {
+  margin-bottom: 20px;
+}
+
+.contact_links img {
+  width: 40px;
 }
 
 #hire_btn {
