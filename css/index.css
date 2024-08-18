@@ -106,3 +106,16 @@ footer span {
 .hire_container {
   display: none;
 }
+
+#hire_btn {
+  border: none;
+  background-color: #f7f0f6;
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color0.5s;
+}
+
+#hire_btn:hover {
+  color: #c75b7a;
+}
