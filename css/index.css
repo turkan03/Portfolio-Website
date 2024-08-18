@@ -3,6 +3,10 @@
 body {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1rem;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
 }
 
 header {
@@ -11,4 +15,66 @@ header {
   font-size: 1.3rem;
   color: #312828;
   opacity: 0.8;
+}
+
+.about_me img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+}
+
+/* Layout */
+
+main {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.about_me,
+.menu_box,
+.skill_box,
+.skills_list {
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+}
+
+.about_me {
+  gap: 60px;
+}
+
+.menu_box {
+  align-self: stretch;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.skills_list {
+  list-style: none;
+  gap: 15px;
+}
+
+.skills_list img {
+  width: 70%;
+  filter: grayscale(100%) contrast(130%);
+}
+
+.content .about_me-text {
+  max-width: 700px;
+}
+
+footer {
+  justify-self: center;
+}
+
+footer span {
+  color: rgb(226, 30, 30);
+}
+
+/* For javascript */
+.hire_container {
+  display: none;
 }
