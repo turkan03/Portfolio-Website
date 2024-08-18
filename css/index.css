@@ -3,6 +3,7 @@
 body {
   font-family: "Outfit", sans-serif;
   font-size: 1rem;
+  background-color: #f7f0f6;
   height: 100vh;
   color: #333;
   text-align: justify;
@@ -71,6 +72,26 @@ main {
 
 .content .about_me-text {
   max-width: 700px;
+}
+
+.project_box p {
+  margin-bottom: 15px;
+}
+
+.project_list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.project_list a {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.project_list a:hover,
+.project_list a:active {
+  color: #c75b7a;
 }
 
 footer {
