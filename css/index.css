@@ -176,3 +176,48 @@ footer span {
   left: 90%;
   width: 30px;
 }
+
+/* For small screen */
+
+@media screen and (max-width: 55em) {
+  body {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 46em) {
+  main {
+    margin-bottom: 30px;
+  }
+  .about_me,
+  .menu_box,
+  .skill_box {
+    flex-direction: column;
+  }
+
+  .menu_box {
+    gap: 30px;
+  }
+  .skill_box {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skills_list {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .about_me img {
+    order: -1;
+    align-self: center;
+  }
+
+  .hire_container {
+    height: 500px;
+  }
+
+  #close_btn::before {
+    left: 85%;
+  }
+}
