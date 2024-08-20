@@ -39,6 +39,8 @@ main {
   flex-direction: column;
   gap: 50px;
   align-items: center;
+
+  position: relative; /*for hire contact container*/
 }
 
 .about_me,
@@ -102,10 +104,11 @@ footer span {
   color: rgb(226, 30, 30);
 }
 
-/* For javascript */
 .hire_container {
-  /* display: none; */
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 2rem;
 }
 
@@ -145,4 +148,31 @@ footer span {
 
 #hire_btn:hover {
   color: #c75b7a;
+}
+
+/* For javascript */
+
+#hire_container_hidden {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#close_btn::before {
+  content: "X";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  position: absolute;
+  top: 3%;
+  left: 90%;
+  width: 30px;
 }
